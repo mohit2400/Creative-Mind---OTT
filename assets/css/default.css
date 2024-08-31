@@ -438,3 +438,49 @@ footer {
 .footer-bottom p {
   font-size: 14px;
 }
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #1a1a1a;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+strong {
+  color: #ff4747;
+}
