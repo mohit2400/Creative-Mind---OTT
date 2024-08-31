@@ -45,7 +45,7 @@
   display: block;
 }
 
-.dropdown-submenu>a:after {
+.dropdown-submenu > a:after {
   display: block;
   content: " ";
   float: right;
@@ -59,7 +59,7 @@
   margin-right: -10px;
 }
 
-.dropdown-submenu:hover>a:after {
+.dropdown-submenu:hover > a:after {
   border-left-color: #fff;
 }
 
@@ -78,7 +78,6 @@
   border-radius: 4px;
   border: none;
 }
-
 
 .navbar-login .login-button {
   background-color: #555;
