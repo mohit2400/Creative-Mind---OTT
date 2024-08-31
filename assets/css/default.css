@@ -484,3 +484,129 @@ ul li {
 strong {
   color: #ff4747;
 }
+
+#contact-us {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.contact-container .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-container textarea {
+  resize: vertical;
+}
+
+.contact-container button {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.contact-container button:hover {
+  background-color: #e74343;
+}
+
+/* Style the floating labels and inputs */
+.form-floating {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-floating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  color: #777;
+}
+
+.form-floating input {
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 100%;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-floating input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-floating input:focus ~ label,
+.form-floating input:not(:placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-1rem) translateX(0.15rem);
+  color: #007bff;
+}
+
+/* Add some hover effects */
+.form-floating input:hover {
+  border-color: #0056b3;
+}
+
+/* Optional: Style the container div to center and size it */
+.contact-section {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the container for mobile */
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 1rem;
+  }
+}
