@@ -43,453 +43,337 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" /> -->
+     <link rel="stylesheet" href="sass/main.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/default.css" />
 
     <!-- Bootstrap JS -->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script defer src="assets/js/script.js"></script>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./extras/Meumo Logo.png" alt="Logo" class="logo" />
-          <span class="name">MeumoTv</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Categories
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="./categories.htm">Movies</a>
-                </li>
-                <li class="dropdown-submenu">
-                  <a
-                    class="dropdown-item dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownTV"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    TV Shows
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="./categories.htm">Drama</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./categories.htm"
-                        >Comedy</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./categories.htm"
-                        >Action &amp; Adventure</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./categories.htm"
-                        >Reality TV</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./categories.htm"
-                        >Documentary</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a
-                    class="dropdown-item dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownOriginal"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Original Content
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">Netflix Originals</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Amazon Originals</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Hulu Originals</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Disney+ Originals</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a
-                    class="dropdown-item dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownGenres"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Genres
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Romance</a></li>
-                    <li><a class="dropdown-item" href="#">Horror</a></li>
-                    <li><a class="dropdown-item" href="#">Thriller</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Sci-Fi &amp; Fantasy</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Animation</a></li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Kids &amp; Family</a></li>
-                <li><a class="dropdown-item" href="#">Sports</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">Browse All</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Movies.htm">Movies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./series.htm">Series</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.htm">About</a>
-            </li>
-          </ul>
-          <div class="search-group">
-            <form class="input-group">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+    <header class="sticky-top">
+      <!-- place navbar here -->
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-light mx px-lg-5"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./extras/Meumo Logo.png" alt="Logo" class="logo" />
+            <span class="name">MeumoTv</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            style="backdrop-filter: blur(10px)"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
               <button
-                class="btn btn-outline-success"
-                type="submit"
-                title="search"
-              >
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./categories.htm"
+                        >Movies</a
+                      >
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownTV"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        TV Shows
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./categories.htm"
+                            >Drama</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./categories.htm"
+                            >Comedy</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./categories.htm"
+                            >Action &amp; Adventure</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./categories.htm"
+                            >Reality TV</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./categories.htm"
+                            >Documentary</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownOriginal"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Original Content
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Netflix Originals</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Amazon Originals</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Hulu Originals</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Disney+ Originals</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownGenres"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Genres
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Horror</a></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Sci-Fi &amp; Fantasy</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Animation</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids &amp; Family</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Browse All</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./series.htm">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <form class="input-group me-2">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-primary" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+                <button
+                  class="btn btn-outline-primary rounded-circle"
+                  type="button"
+                >
+                  <i class="fa fa-user"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <a
-          href="login.html"
-          class="btn btn-outline-success rounded-pill ms-4"
-          title="user-login"
-          ><i class="fas fa-user"></i
-        ></a>
-      </div>
-      <!-- A profile button will be added with profile icon from font awesome-->
-    </nav>
+      </nav>
+    </header>
+    <iframe
+      src="assets/frames/carousel-animation/index.html"
+      frameborder="0"
+      class="w-100 slider-animated"
+    ></iframe>
 
-    <div class="intro-section">
-      <div class="content">
-        <h1>Welcome to MeumoTv</h1>
-        <p>Your ultimate destination for streaming movies, series, and more.</p>
-        <a href="#" class="cta-button">Get Started</a>
-      </div>
-    </div>
+    <main>
+      <section class="popular-movies container-fluid px-lg-5 bg-accent">
+        <h1>Popular Movies</h1>
+        <div id="popular-movies-container" class="card-section"></div>
+      </section>
 
-    <div class="container">
-      <h1>Categories</h1>
-      <div class="card-section">
-        <div class="card">
-          <img src="movie1.jpg" alt="Movie 1" />
-          <div class="card-content">
-            <h2>Movie Title 1</h2>
-            <p>Genre: Action</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie2.jpg" alt="Movie 2" />
-          <div class="card-content">
-            <h2>Movie Title 2</h2>
-            <p>Genre: Drama</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie3.jpg" alt="Movie 3" />
-          <div class="card-content">
-            <h2>Movie Title 3</h2>
-            <p>Genre: Comedy</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie4.jpg" alt="Movie 4" />
-          <div class="card-content">
-            <h2>Movie Title 4</h2>
-            <p>Genre: Horror</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie5.jpg" alt="Movie 5" />
-          <div class="card-content">
-            <h2>Movie Title 5</h2>
-            <p>Genre: Animated</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie6.jpg" alt="Movie 6" />
-          <div class="card-content">
-            <h2>Movie Title 6</h2>
-            <p>Genre: Romantic</p>
-          </div>
-        </div>
-        <!-- Add more cards as needed -->
-      </div>
-    </div>
+      <section class="new-releases container-fluid px-lg-5 bg-accent">
+        <h1>New Releases</h1>
+        <div id="new-releases-container" class="card-section"></div>
+      </section>
 
-    <div class="container">
-      <h1>Popular Movies</h1>
-      <div class="card-section">
-        <div class="card">
-          <img src="movie1.jpg" alt="Movie 1" />
-          <div class="card-content">
-            <h2>Movie Title 1</h2>
-            <p>Genre: Action</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie2.jpg" alt="Movie 2" />
-          <div class="card-content">
-            <h2>Movie Title 2</h2>
-            <p>Genre: Drama</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie3.jpg" alt="Movie 3" />
-          <div class="card-content">
-            <h2>Movie Title 3</h2>
-            <p>Genre: Comedy</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie4.jpg" alt="Movie 4" />
-          <div class="card-content">
-            <h2>Movie Title 4</h2>
-            <p>Genre: Horror</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie5.jpg" alt="Movie 5" />
-          <div class="card-content">
-            <h2>Movie Title 5</h2>
-            <p>Genre: Animated</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie6.jpg" alt="Movie 6" />
-          <div class="card-content">
-            <h2>Movie Title 6</h2>
-            <p>Genre: Romantic</p>
-          </div>
-        </div>
-        <!-- Add more cards as needed -->
-      </div>
-    </div>
+      <section class="tv-shows container-fluid px-lg-5 bg-accent">
+        <h1>TV Shows</h1>
+        <div id="tv-shows-container" class="card-section"></div>
+      </section>
 
-    <div class="container">
-      <h1>New Release</h1>
-      <div class="card-section">
-        <div class="card">
-          <img src="movie1.jpg" alt="Movie 1" />
-          <div class="card-content">
-            <h2>Movie Title 1</h2>
-            <p>Genre: Action</p>
+      <section class="highlight-section">
+        <div class="highlight-content">
+          <div class="movie-info">
+            <h1 class="movie-title">The Great Adventure</h1>
+            <p class="movie-description">
+              Experience the thrill of a lifetime as you journey through
+              breathtaking landscapes and face challenges that will test your
+              courage. Watch now and be a part of this epic adventure!
+            </p>
+            <a href="#" class="watch-now-btn">Watch Now</a>
+          </div>
+          <div class="movie-poster">
+            <img
+              src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+              alt="The Great Adventure Poster"
+            />
           </div>
         </div>
-        <div class="card">
-          <img src="movie2.jpg" alt="Movie 2" />
-          <div class="card-content">
-            <h2>Movie Title 2</h2>
-            <p>Genre: Drama</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie3.jpg" alt="Movie 3" />
-          <div class="card-content">
-            <h2>Movie Title 3</h2>
-            <p>Genre: Comedy</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie4.jpg" alt="Movie 4" />
-          <div class="card-content">
-            <h2>Movie Title 4</h2>
-            <p>Genre: Horror</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie5.jpg" alt="Movie 5" />
-          <div class="card-content">
-            <h2>Movie Title 5</h2>
-            <p>Genre: Animated</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie6.jpg" alt="Movie 6" />
-          <div class="card-content">
-            <h2>Movie Title 6</h2>
-            <p>Genre: Romantic</p>
-          </div>
-        </div>
-        <!-- Add more cards as needed -->
-      </div>
-    </div>
-
-    <div class="container">
-      <h1>TV Shows</h1>
-      <div class="card-section">
-        <div class="card">
-          <img src="movie1.jpg" alt="Movie 1" />
-          <div class="card-content">
-            <h2>Movie Title 1</h2>
-            <p>Genre: Action</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie2.jpg" alt="Movie 2" />
-          <div class="card-content">
-            <h2>Movie Title 2</h2>
-            <p>Genre: Drama</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie3.jpg" alt="Movie 3" />
-          <div class="card-content">
-            <h2>Movie Title 3</h2>
-            <p>Genre: Comedy</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie4.jpg" alt="Movie 4" />
-          <div class="card-content">
-            <h2>Movie Title 4</h2>
-            <p>Genre: Horror</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie5.jpg" alt="Movie 5" />
-          <div class="card-content">
-            <h2>Movie Title 5</h2>
-            <p>Genre: Animated</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="movie6.jpg" alt="Movie 6" />
-          <div class="card-content">
-            <h2>Movie Title 6</h2>
-            <p>Genre: Romantic</p>
-          </div>
-        </div>
-        <!-- Add more cards as needed -->
-      </div>
-    </div>
-
-    <section class="highlight-section">
-      <div class="highlight-content">
-        <div class="movie-info">
-          <h1 class="movie-title">The Great Adventure</h1>
-          <p class="movie-description">
-            Experience the thrill of a lifetime as you journey through
-            breathtaking landscapes and face challenges that will test your
-            courage. Watch now and be a part of this epic adventure!
-          </p>
-          <a href="#" class="watch-now-btn">Watch Now</a>
-        </div>
-        <div class="movie-poster">
-          <img
-            src="https://via.placeholder.com/400x600"
-            alt="The Great Adventure Poster"
-          />
-        </div>
-      </div>
-    </section>
-
-    <div class="banner">
-      <div class="banner-content">
-        <h1>Unlimited Entertainment, One Subscription</h1>
-        <p>
-          Stream your favorite movies, shows, and originals anytime, anywhere.
+      </section>
+  
+      <!-- Subscription Section -->
+      <section class="text-center section bg-secondary py-5">
+        <h2 class="fs-1">Subscription</h2>
+        <p class="lead fs-4">
+          Get unlimited access to all of StreamNest's premium content
         </p>
-        <!-- <a href="#" class="subscribe-btn">Subscribe Now</a> -->
-      </div>
-    </div>
+        <div class="container-lg">
+          <div class="row my-5 align-items-center justify-content-center g-0">
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-content-center text-center py-4 align-items-center"
+                >
+                  <h4 class="card-title">Basic Plan</h4>
+                  <p class="lead card-subtitle">Access to limited content</p>
+                  <p class="h2 my-4 fw-bold">$8.99/month</p>
+                  <ul class="list-unstyled text-start mx-auto">
+                    <li>
+                      <i class="bi bi-check-circle"></i> Access to 2 devices
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> HD Streaming</li>
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      Ad-supported
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-primary btn-lg mt-3"
+                    >Subscribe Now</a
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-9 col-lg-4">
+              <div class="card border-primary border-2">
+                <div class="card-header text-center">Most Popular</div>
+                <div
+                  class="card-body border-none d-flex flex-column justify-content-center align-content-center text-center align-items-center py-4"
+                >
+                  <h4 class="card-title">Standard Plan</h4>
+                  <p class="lead card-subtitle">Access to most content</p>
+                  <p class="h2 my-4 fw-bold">$12.99/month</p>
+                  <ul class="list-unstyled text-start mx-auto">
+                    <li>
+                      <i class="bi bi-check-circle"></i> Access to 4 devices
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Full HD Streaming</li>
+                    <li><i class="bi bi-check-circle"></i> Ad-free experience</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary btn-lg mt-3"
+                    >Subscribe Now</a
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-content-center text-center align-items-center py-4"
+                >
+                  <h4 class="card-title">Premium Plan</h4>
+                  <p class="lead card-subtitle">
+                    Unlimited access to all content
+                  </p>
+                  <p class="h2 my-4 fw-bold">$18.99/month</p>
+                  <ul class="list-unstyled text-start mx-auto">
+                    <li>
+                      <i class="bi bi-check-circle"></i> Access to 6 devices
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> 4K Ultra HD Streaming
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Offline downloads</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary mt-3">Subscribe Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <section class="pricing-table">
-      <div class="pricing-card">
-        <h3 class="plan-title">Basic</h3>
-        <p class="plan-price">$9.99/month</p>
-        <ul class="plan-features">
-          <li>Access to basic content</li>
-          <li>720p resolution</li>
-          <li>Watch on 1 screen at a time</li>
-          <li>Cancel anytime</li>
-        </ul>
-        <a href="#" class="subscribe-btn">Subscribe</a>
-      </div>
 
-      <div class="pricing-card">
-        <h3 class="plan-title">Standard</h3>
-        <p class="plan-price">$14.99/month</p>
-        <ul class="plan-features">
-          <li>Access to all content</li>
-          <li>1080p resolution</li>
-          <li>Watch on 2 screens at a time</li>
-          <li>Cancel anytime</li>
-        </ul>
-        <a href="#" class="subscribe-btn">Subscribe</a>
-      </div>
-
-      <div class="pricing-card">
-        <h3 class="plan-title">Premium</h3>
-        <p class="plan-price">$19.99/month</p>
-        <ul class="plan-features">
-          <li>Access to all content</li>
-          <li>4K resolution</li>
-          <li>Watch on 4 screens at a time</li>
-          <li>Cancel anytime</li>
-        </ul>
-        <a href="#" class="subscribe-btn">Subscribe</a>
-      </div>
-    </section>
-
-    <footer class="footer bg-dark mt-auto py-3">
+    <footer class="footer bg-dark mt-auto pt-5 pb-3">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
@@ -568,7 +452,8 @@
           </div>
         </div>
       </div>
-      <div class="text-center text-light mt-3">
+      <hr />
+      <div class="text-center text-secondary mt-3">
         &copy; 2024 MeumoTv. All rights reserved.
       </div>
     </footer>
