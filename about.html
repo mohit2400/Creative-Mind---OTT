@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeumoTv_about</title>
+    <!-- favicon start -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- CDN for fontawesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/about.css">
+
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./extras/Meumo Logo.png" alt="Logo" class="logo" />
+          <span class="name">MeumoTv</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Movies</a></li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownTV"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    TV Shows
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                    <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Action &amp; Adventure</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Reality TV</a></li>
+                    <li><a class="dropdown-item" href="#">Documentary</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownOriginal"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Original Content
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Netflix Originals</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Amazon Originals</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Hulu Originals</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Disney+ Originals</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownGenres"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Genres
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sci-Fi &amp; Fantasy</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Animation</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Kids &amp; Family</a></li>
+                <li><a class="dropdown-item" href="#">Sports</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Browse All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Movies.htm">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./series.htm">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.htm">About</a>
+            </li>
+          </ul>
+          <div class="search-group">
+            <form class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                title="search"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <a
+          href="login.html"
+          class="btn btn-outline-success rounded-pill ms-4"
+          title="user-login"
+          ><i class="fas fa-user"></i
+        ></a>
+      </div>
+      <!-- A profile button will be added with profile icon from font awesome-->
+    </nav>
+
+    <section class="about-section">
+      <div class="container">
+        <h1>Welcome to Meumo TV</h1>
+        <p>
+          At Meumo TV, we believe in the power of stories to connect, inspire,
+          and entertain. Our platform is more than just a streaming service;
+          it's a gateway to worlds beyond imagination, where every click brings
+          you closer to your next favorite show or movie.
+        </p>
+
+        <h2>Our Vision</h2>
+        <p>
+          We envision a world where high-quality entertainment is accessible to
+          all, transcending boundaries and bringing people together through
+          shared experiences. Meumo TV is committed to curating content that
+          resonates with diverse audiences, fostering a global community united
+          by the love of great stories.
+        </p>
+
+        <h2>What Makes Us Unique?</h2>
+        <ul>
+          <li>
+            <strong>Diverse Content Library:</strong> From blockbuster hits to
+            indie gems, our extensive collection spans across genres and
+            cultures, ensuring there's something for everyone.
+          </li>
+          <li>
+            <strong>Personalized Experience:</strong> Our intelligent
+            recommendation system tailors content to your tastes, making it
+            easier than ever to discover new favorites.
+          </li>
+          <li>
+            <strong>Seamless Streaming:</strong> Enjoy smooth, high-definition
+            streaming across all your devices, with minimal buffering and
+            maximum enjoyment.
+          </li>
+          <li>
+            <strong>Original Productions:</strong> Dive into exclusive Meumo
+            Originals, crafted with care by visionary creators to bring you
+            stories you won't find anywhere else.
+          </li>
+          <li>
+            <strong>Community Engagement:</strong> Join a vibrant community of
+            viewers who share your passion for storytelling, with opportunities
+            to participate in discussions, reviews, and fan events.
+          </li>
+          <li>
+            <strong>Affordable Plans:</strong> Experience premium content
+            without breaking the bank, thanks to our flexible and affordable
+            subscription options.
+          </li>
+        </ul>
+
+        <h2>Our Journey</h2>
+        <p>
+          Meumo TV started as a small team of entertainment enthusiasts with a
+          big dream: to create a platform that honors the art of storytelling.
+          Today, we're proud to serve millions of viewers worldwide, constantly
+          evolving to bring you the best in entertainment.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact-us">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, feedback, or need assistance, please feel
+          free to reach out to us.
+        </p>
+
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            id="floatingFeedback"
+            placeholder="Type here"
+            style="height: 180px"
+          ></textarea>
+          <label for="floatingFeedback">Feedback</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Our Story</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+            <h5 class="text-light">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Terms &amp; Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+            <h5 class="text-light">Follow Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  ><i class="bi bi-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  ><i class="bi bi-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  ><i class="bi bi-instagram"></i> Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+            <h5 class="text-light">Newsletter</h5>
+            <p class="text-secondary">
+              Stay up to date with our latest news and updates.
+            </p>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="example@email.com"
+                />
+                <button class="btn btn-light" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-light mt-3">
+        &copy; 2024 MeumoTv. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
